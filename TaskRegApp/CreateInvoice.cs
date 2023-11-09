@@ -14,7 +14,7 @@ namespace TaskRegApp
             _logger = loggerFactory.CreateLogger<CreateInvoice>();
         }
 
-        [Function("CreateInvoice")]
+        [Function("CreateInvoiceFunction")]
         public HttpResponseData Run([HttpTrigger(AuthorizationLevel.Anonymous, "get", "post")] HttpRequestData req)
         {
             _logger.LogInformation("C# HTTP trigger function processed a request.");
